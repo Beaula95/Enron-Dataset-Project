@@ -14,16 +14,11 @@ from sklearn.cross_validation import StratifiedShuffleSplit,train_test_split,cro
 ### Task 1: Select what features you'll use.
 ### features_list is a list of strings, each of which is a feature name.
 ### The first feature must be "poi".
-target_label = 'poi'
-email_features_list = [
-    'from_messages',
+my_features_list=['poi','from_messages',
     'from_poi_to_this_person',
     'from_this_person_to_poi',
     'shared_receipt_with_poi',
-    'to_messages',
-    ]
-financial_features_list = [
-    'bonus',
+    'to_messages','bonus',
     'deferral_payments',
     'deferred_income',
     'director_fees',
@@ -37,8 +32,8 @@ financial_features_list = [
     'salary',
     'total_payments',
     'total_stock_value',
-]
-my_features_list = [target_label] + financial_features_list + email_features_list
+                 ]               
+
 features_list = ["poi"]#features_list is a list where we add features by KBest Selection.
 ### Load the dictionary containing the dataset
 with open("final_project_dataset.pkl", "r") as data_file:
