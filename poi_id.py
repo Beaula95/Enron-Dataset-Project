@@ -21,7 +21,7 @@ email_features_list = [
     'from_this_person_to_poi',
     'shared_receipt_with_poi',
     'to_messages',
-    ]
+     ]
 financial_features_list = [
     'bonus',
     'deferral_payments',
